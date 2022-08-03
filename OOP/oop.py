@@ -31,3 +31,24 @@ print(p1.get())
 print(Person.get(p2))
 
 print('This is str for p', p1)
+
+from datetime import date
+
+class Person:
+
+    def __init__(self, name, age):
+        self.name=name
+        self.age=age
+    
+    @classmethod
+    def obj_createwithage_by_yr(cls, name, year):
+
+        age = date.today().year-year 
+        print(age)
+        return cls(name, age)
+
+print('')
+print('Age is: ')
+
+person = Person('Rohit', 22)
+person2 = Person.obj_createwithage_by_yr('Rht', 2010)
