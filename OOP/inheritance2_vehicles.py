@@ -36,9 +36,12 @@ class Bike(Vehicle):
 
 vehicle1=Vehicle('Tata', 'Tata-1')
 vehicle1.get_vehicle_info()
+print(f'This is {vehicle1.brand} car of model {vehicle1.model}.')
 
 car1=Car('Audi', 'A1')
 car1.get_car_info()
+print(f'This is {car1.brand} car of model {car1.model} with {car1.num_of_wheels} wheels.')
 
 bike1=Bike('Honda', "H-1")
 bike1.get_bike_info()
+print(f'This is {bike1.brand} bike of model {bike1.model} with {bike1.wheels} wheels.')
