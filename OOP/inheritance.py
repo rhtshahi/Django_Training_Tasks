@@ -73,3 +73,35 @@ print(lab_obj.name, lab_obj.color, lab_obj.fur)
 print(lab_obj.get_color())
 print(dog.get_color())
 # print(dog.fur)           # >> Error coz parent class has no breed_name
+
+#--issubclass(sub,sup) method--#
+
+print(issubclass(Labrador, Dog))#Prints True if Labrador in subclass of class Dog. If Labrador inherits Dog
+print(issubclass(Dog, Labrador))
+
+#--isinstance (obj, class) method--#
+
+print(isinstance(lab_obj, Dog))#Prints True if lab_obj is object of class Dog
+print(isinstance(lab_obj, Labrador))
+
+#-----------------Method Overriding------------------#
+
+class Students:
+    def speak(self):
+        print('Student')
+
+class BBA(Students):
+    def speak(self):
+        print('BBA Students')
+
+class BSC(Students):
+    def speak(self):
+        print('BSC Students')
+
+class BA(Students):
+    def speak(self):
+        print('BA Students')
+
+s1=Students().speak()
+s2=BBA().speak()
+s3=BSC().speak()
