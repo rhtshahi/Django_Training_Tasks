@@ -16,7 +16,7 @@ class Pegion(Bird):
 
 class Ostrich(Bird):
     def __init__(self, status=False):
-        self.status=False
+        self.status=status
 
 #---Testion for pegion object---#
 print('Testion for pegion object')
